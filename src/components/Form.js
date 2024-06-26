@@ -275,6 +275,19 @@ const Form = () => {
                                     />
                                     <label htmlFor="workPermit">Permiso de Trabajo</label>
                                 </div>
+                                 <div className="flex items-center mb-2">
+                                    <input
+                                        type="checkbox"
+                                        id="none"
+                                        name="none"
+                                        value="Ninguno"
+                                        checked={formData.documentation.includes('Pasaporte Europeo')}
+                                        onChange={handleChange}
+                                        className="mr-2"
+
+                                    />
+                                    <label htmlFor="none"> Ninguno </label>
+                                </div>
                             </div>
                         )}
                         <div className="mb-4">
